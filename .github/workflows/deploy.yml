@@ -30,7 +30,9 @@ jobs:
 
       - name: Prepare standalone package
         run: |
-          cp -r .next/static .next/standalone/.next/static
+          mkdir -p .next/standalone/.next/static
+          cp -r .next/static/. .next/standalone/.next/static/
+
           if [ -d public ]; then
             cp -r public .next/standalone/public
           fi
