@@ -7,4 +7,5 @@ const nextConfig: NextConfig = {
   partialPrefetching: true,
 };
 
+
 export default nextConfig;
